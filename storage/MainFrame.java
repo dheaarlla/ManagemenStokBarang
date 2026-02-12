@@ -16,6 +16,13 @@ public class MainFrame extends javax.swing.JDialog {
         initComponents();
     }
 
+    
+    private void clear() {
+        inNama.setText("");
+        inCode.setText("");
+        inStok.setText("");
+    }
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -189,7 +196,7 @@ public class MainFrame extends javax.swing.JDialog {
            JOptionPane.showMessageDialog(null, "Barang Berhasil Ditambahkan!", "SUKSES!",
                    JOptionPane.INFORMATION_MESSAGE
                    );
-            
+            clear();
        }
            
        
